@@ -1,11 +1,19 @@
 #include <iostream>
+
 using namespace std;
+/**
+    Luis Antonio Aguilar Carrillo 217149
+    Este es un codigo que simula un menu sobre lo que quiera realziar el usuario que, que tiene dos opciones que es poder factorizar y un menu con que pueda consultar gastos
+    retirar saldo y despues de eso se le mostrara cuanto saldo tendra depues de eso
+
+**/
 
 int factorial(int n) {
 
     if (n == 0 || n == 1) {
         return 1;
     }
+    /** Regresar la factorizacion del codigo   **/
     return n * factorial(n - 1);
 }
 
@@ -23,6 +31,7 @@ int main() {
 
     if(menu == 1)
     {
+        /** Factoriazcion  **/
     do
     {
         int numero;
@@ -40,6 +49,7 @@ int main() {
     return 0;
     }
     else if (menu == 2)
+    /**  Cajero automatico  **/
     {
         int opc2;
         cout<<endl<<"Bienvenido al cajero";
@@ -49,14 +59,14 @@ int main() {
         switch (opc2)
         {
         case 1:
-                    cout<<endl<<"Este el saldo hasta el momento"<<Csaldo;
+                    cout<<endl<<"Este el saldo hasta el momento: "<<Csaldo;
             break;
         case 2:
-                cout<<endl<<"Cuanto es el saldo que desea retiriar"<<Refectivo;
+                cout<<endl<<"Cuanto es el saldo que desea retiriar: "<<Refectivo;
                 cin>>Refectivo;
 
                 Csaldo =- Refectivo;
-                cout<<endl<<"Este es tu nuevo saldo"<<Csaldo;
+                cout<<endl<<"Este es tu nuevo saldo: "<<Csaldo;
             break;
         default:
             break;
